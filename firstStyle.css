@@ -1,0 +1,14 @@
+.paraOne{
+	text-align: center;
+	border-color: blue;
+	border: 1;
+}
+#paraTwo{
+	background-color: yellow;
+	font-family: "Comic Sans MS";
+}
+#tableHead{
+	background-color: red;
+	color: blue;
+
+}

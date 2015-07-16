@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>homework1</title>
+</head>
+<center>
+<body>
+	<h1>This is practice of homework for input tags</h1>
+
+	<form>
+		<fieldset>
+			<legend>Personal Details</legend>
+			<input type="text" name = "fname" placeholder = "First Name">
+			<input type="text" name = "lname" placeholder = "Last Name">
+			<br>
+			<input type="password" name = "pass" placeholder = "PassWord">
+
+		</fieldset>
+		
+		<fieldset>
+			<legend>Numeric details</legend>
+			Enter Age: <input type="number" name="quantity" placeholder= "00">
+			Restricted: <input type="number" name="num" placeholder= "00" max="20" min = "0">
+			<br><br>
+			Please select your fav color:
+			<input type="checkbox" name="test" value="red">RED
+			<input type="checkbox" name="test" value="blue">BLUE
+		</fieldset>
+		
+		Enter your Animal: <input list="animals">
+
+		<datalist id="animals">
+			<option value = "Dog">
+			<option value = "Cat">
+			<option value = "Donkey">
+			<option value = "Snake">
+		</datalist>
+		<br>
+		<div align="center">
+		<input type = "submit" value="go">
+		</div>
+
+
+
+
+
+	</form>
+</body>
+</center>
+</html>
+
+<!-- 
+A sample form with numeric values- input field,names only,attributes quantity,data,
+number limit 1 to 20,
+set passowrd,
+checkbox,
+form action page. -->

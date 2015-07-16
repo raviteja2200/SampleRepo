@@ -1,0 +1,57 @@
+HW 7/15: intro CSS:
+
+Create a HTML page that shows a table
+
+Table should be boardered
+
+Also create a Seperate Paragraphs.
+
+Ecah paragraph should have class or ID but not both
+
+Page shold have separate style sheet.
+
+Do experiments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+html style attribute:
+background-color
+//syntax
+<body style = "background-color:lightgrey">
+color
+//syntax
+<body style = "color:blue">
+font-family
+//syntax
+<body style = "font-family:verdana">
+font-size
+text-align
+
+//syntax
+style = "property:value"
+
+
+html formatting elements:
+
+<b> bold
+<em> emphasize
+<i> italic
+<small> small
+<strong> bold with strong importance
+<sub> subscripted text this is like base 10b2
+<sup> super scripted text this is like power 2^3
+<ins> inserted text marks a underline to text  
+<del> deleted text strikes of contenet
+<mark> adds a background color to it
+
+
