@@ -12,11 +12,23 @@ Page shold have separate style sheet.
 
 Do experiments.
 
+7/16/2015
+
+list-style-type: changes the bullet. values square,
+
+find displaynone and visibily none!!!
+
+difference between static and fixed!!!!
+
+responsive web design(RWD) vs adaptive web design(AWD)
+
+border radius.
+
+media.
 
 
 
-
-
+static by default
 
 
 
@@ -36,9 +48,21 @@ font-family
 <body style = "font-family:verdana">
 font-size
 text-align
-
+css color frames
 //syntax
 style = "property:value"
+links lists border box type
+css3 new animations box sizing and resizing media query 
+
+java script for 2 weeks
+
+7/16/2015:
+
+navigation bar employee id employee details
+
+
+7/20/2015:
+z-index
 
 
 html formatting elements:
@@ -53,5 +77,3 @@ html formatting elements:
 <ins> inserted text marks a underline to text  
 <del> deleted text strikes of contenet
 <mark> adds a background color to it
-
-

@@ -1,7 +1,9 @@
 .paraOne{
-	text-align: center;
+	/*text-align: center;*/
 	border-color: blue;
-	border: 1;
+	border: 1px solid;
+	text-indent: 50px;
+	font-weight: lighter;
 }
 #paraTwo{
 	background-color: yellow;
@@ -12,3 +14,4 @@
 	color: blue;
 
 }
+
