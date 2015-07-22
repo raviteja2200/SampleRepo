@@ -63,8 +63,14 @@ navigation bar employee id employee details
 
 7/20/2015:
 z-index
-
-
+it is very important
+asked in interviews all the time these days
+used with images and picters
+in the see the example below.
+<style>
+	img{}
+</style>
+create a html page one letter should be in each color
 html formatting elements:
 
 <b> bold
@@ -77,3 +83,7 @@ html formatting elements:
 <ins> inserted text marks a underline to text  
 <del> deleted text strikes of contenet
 <mark> adds a background color to it
+
+Create a separate page use only one class
+get same output
+
