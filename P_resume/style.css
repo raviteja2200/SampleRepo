@@ -1,0 +1,120 @@
+.container1{
+	padding-top: 0px;
+	padding-left: 0px;
+	width: 100%;
+	height: 350px;
+	display: block;
+	text-align: left;
+	border:2px solid;
+	background-color: aqua;
+}
+
+
+.header1{
+	font-size: 72px;
+	font-family: "Comic Sans MS";
+	padding-top: 100px;
+	margin-bottom: 0;
+	text-align: left;
+	margin-top: 0;
+	
+	
+}
+.header{
+	font-size: 36px;
+	font-family: "Comic Sans MS";
+	margin-bottom: 0;
+	
+	margin-top: 0;
+}
+/*.combo{
+	width: 60%;
+	float: left;
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: block;
+}
+*/
+/*.subheader{
+	
+	margin-top: 0;
+	float: left;
+	
+	text-align: left;
+}
+.combo{
+	width: 100%;
+	height: 162px;
+
+}*/
+
+#pic{
+	margin-left: 130px;
+	float: left;
+	text-indent: 100px;
+
+	border: 2px solid blue;
+	border-radius: 100%;
+}
+.foto{
+	padding-top: 0px;
+	display: block;
+	text-align: center;
+}
+.name{
+	margin-top: 13px;
+	text-align: center;
+	display: block;
+	line-height: 24px;
+}
+.menu{
+	/*padding-top: 200px;
+	padding-right: 0px;
+	width: 1000px;
+	height: 210px;*/
+	text-align: center;
+	/*display: inline-block;*/
+}
+.link{
+	height: 170px;
+	width: 170px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline-block;
+	text-align: center;
+}
+.container{
+	width: 100%;
+	border: 2px solid;
+
+	background-color: aqua;
+	/*padding-top: 30px;
+	padding-left: 150px;
+	width: 1263px;
+	height: 210px;
+	display: inline-block;
+	text-align: center;*/
+
+}
+.home{
+	display: block;
+}
+
+.footer{
+	line-height: 32px;
+}
+.footimg{
+	padding-top: 10px;
+}
+.container2{
+	background-color: aqua;
+}
+.head{
+	text-align: center;
+	font-size: 20px;
+}
+.subhead{
+	font-size: 15px;
+	font-family: "Comic Sans MS";
+}
