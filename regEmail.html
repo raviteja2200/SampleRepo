@@ -4,7 +4,10 @@
 	<title>Validate Email</title>
 </head>
 <body>
-	<input type="text" id="txtEmail" onkeyup="validateEmail()" />
+	Email: <input type="text" id="txtEmail" onkeyup="validateEmail()" />
+	<br />
+	<br />
+	Enter your phone: <input type="text" id="phonenum" onkeyup="validatePhone()" />
 	<script type="text/javascript">
 		function validateEmail() 
 		{
@@ -17,13 +20,32 @@
 
 					if (emailRegEx.test(val)) 
 					{
-						emailTextBox.style.backgroundColor="yellow";
+						emailTextBox.style.backgroundColor="aqua";
 
 					} else
 					{
 						emailTextBox.style.backgroundColor="blue";
 
 					}
+		}
+		function validatePhone()
+		{
+			var phone = document.getElementById("phonenum");
+
+			var valph = phone.value;
+
+			var regex = /^(\([0-9]{3}\)\s*|[0-9]{3}\-)[0-9]{3}-[0-9]{4}$/;
+			phone.style.color = "white";
+
+			if (regex.test(valph)) 
+				{
+					phone.style.backgroundColor="aqua";
+				} else
+				{
+					phone.style.backgroundColor="blue";
+
+				};
+
 		}		
 	</script>
 
