@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> see the time</title>
+</head>
+<body>
+	<div id="time"></div>
+	<script type="text/javascript">
+		function updateClock()
+		{
+			var now = new Date(); // current date
+       				
+       		var hr = now.getHours(); // getting hours in 24 hr format
+       			
+       		var ampm = ""; // just assinging a empty string to ampm
+       			//simply checking if the hr > 12 assining ampm  
+
+       			if (hr > 12) 
+       			{
+       				ampm = "pm";
+
+       			}
+       			else
+       			{
+       				ampm = "am";
+       			}
+       			if (hr > 12) 
+       			{
+       				hr=hr-12;
+       			} else if (hr === 0) 
+       			{
+       				hr = 12; 
+       			};	 
+        	time = hr + ':' + now.getMinutes() + ':' +now.getSeconds() + " " + ampm; // again, you get the idea
+
+        	// a cleaner way than string concatenation
+        	date = [now.getMonth()+1,
+        			now.getDate(),
+                	now.getFullYear()].join('/');
+
+    		// set the content of the element with the ID time to the formatted string
+    		document.getElementById('time').innerHTML = "The time now is " + time +"<br /> <br />" +"here is the date too "+ date ;
+
+   			 // call this function again in 1000ms
+    		setTimeout(updateClock, 1000);
+		}
+		updateClock();
+	</script>
+</body>
+</html>
