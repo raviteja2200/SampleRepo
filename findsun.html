@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>find sunday</title>
+</head>
+<body>
+	<button onclick="findSun()">click me</button>
+	<div id ="year"></div>
+	<script type="text/javascript">
+	function findSun()
+	{
+		
+    	for (var i = 2015; i <= 2030; i++) 
+    	{	console.log(i);
+    		var weekday = new Array(7);
+    		weekday[0] = "Sunday";
+    		weekday[1] = "Monday";
+    		weekday[2] = "Tuesday";
+    		weekday[3] = "Wednesday";
+    		weekday[4] = "Thursday";
+    		weekday[5] = "Friday";
+    		weekday[6] = "Saturday";
+    		var st = "January 1," + i + " 01:15:00"
+    		console.log(st);
+    		var d = new Date(st);
+    		var n = weekday[d.getDay()];
+    		if (n==="Sunday") 
+    			{
+    				document.getElementById('year').innerHTML += "The first of january in year "+ i + " is " + n + "<br />";
+    			} else
+    			{
+    				document.getElementById('year').innerHTML += ""
+    			};
+    		/*document.getElementById('year').innerHTML += "The first of january in year "+ i + " is " + n + "<br />"; 
+    		
+    		console.log("The first of january in year "+ i + " is " + n);*/
+		}
+    }	
+	</script>
+</body>
+</html>
