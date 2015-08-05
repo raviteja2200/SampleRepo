@@ -47,7 +47,12 @@ for (var i=0;i<myList.length; i++){
 -focus
 there are so many events find them on internet
 *//*
-number string boolean object array
+number string symbol boolean object array
+java script is case sensitive
+Number
+String 
+symbol(description for symbol)
+var x = Symbol();
 you declare a variable in javascript using var key word
 var keyword is something where u can hold any value
 dont use var key word to use it as a global variable
@@ -57,5 +62,25 @@ scope of varaible in JS
 java script concept called hoisting
 when u declare a variable outside of loop
 Statements are nothing but instructions which are used in programming
+Literals
+There are error string boolean array - literals
 
-*/
+Array literals
+
+var p = ['dodge', 'merc','grapes'];
+
+variable hosting ='a variable can be used before it is declared, you could declare the variable can be declared after the use of it'
+falsy things ==> false undefined null NaN "" 0
+
+truthy values ==> return if dates true
+
+it also has switch (expression)
+
+case case
+[break;]
+try catch statements 
+document object model excetion in 
+throw
+for of statement is the new one added to new JS
+closures are simply nested functions
+ */
