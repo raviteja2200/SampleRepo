@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Enter a string:<input type="text" id="ip" onkeyup="palin();">
+	Can you also enter a number to check if it prime:
+	<input type="text" id="num" onkeyup="isPrime()">
+
+	<div id="res"></div>
+	<script type="text/javascript">
+		function palin() 
+		{
+			var str = document.getElementById('ip').value;
+			console.log(str);
+			// body...
+			var reverse = "";
+
+			for (var i = str.length; i >= 0; i--)
+			 {
+				reverse = reverse +str.charAt(i);
+				console.log(reverse);
+			}
+			if(str == reverse)
+			{
+				document.getElementById('res').innerHTML = "your " + str +" is a palindrome"; 
+			}
+			else
+			{
+				document.getElementById('res').innerHTML = "your " + str +" is  not a palindrome";	
+			}
+
+		}
+		function isPrime()
+		{
+			
+		}
+	</script>
+</body>
+</html>
