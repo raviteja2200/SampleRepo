@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HW_8_5</title>
+</head>
+<body>
+<table>
+	<tr><td>Enter a number<td/><td><input type="text" id="num" onkeyup="isPrime();"  /></td><td id="res1"></td></tr>
+	<tr><td>Enter a String<td/><td><input type = "text" onkeyup = "magicCap(s1);" id="s1"/></td><td id="res2"></td></tr>
+	<tr><td>Convert c to f<td/><td><input type ="text" onkeyup = "change();" id="num2"/></td><td id="res3"></td></tr>
+	<tr><td>Enter a String to reverse it<td/><td><input type="text" onkeyup="reverse();" id="s2" /></td><td id="res4"></td></tr>
+	<tr><td>Enter a String to count vowels<td/><td><input type="text" onkeyup = "numvowel();"id="s3" /></td><td id="res5"></td></tr>
+	</tr>
+	
+</table>
+<br />
+<div id="res"></div>
+	<script type="text/javascript">
+
+        function isPrime() 
+        {
+
+        	var n = document.getElementById("num").value;
+                        
+        	if (n < 2) { document.getElementById("res1").innerHTML = n + " is not prime.";}
+        	if (n != Math.round(n)) {document.getElementById("res1").innerHTML = n + " is not prime."}
+                        
+        	var isPrime = document.getElementById("res1").innerHTML = n + " is prime!";
+
+                        
+        	for (var i = 2; i <= Math.sqrt(n); i++) 
+        	{
+        		if (n % i == 0) {isPrime = document.getElementById("res1").innerHTML = n + " is not prime.";}
+        	}
+
+                        
+        	return isPrime;
+
+    	}
+
+
+		function magicCap(string)
+		{
+			// body...
+			var string = document.getElementById('s1').value;
+			document.getElementById('res2').innerHTML =string.charAt(0) + string.charAt(1).toUpperCase() +  string.slice(2);
+
+		}
+
+		function change()
+		{
+			// body...
+			var n = document.getElementById('num2').value || 0;
+			var f = (1.8*n)+32;
+			console.log(f);
+			document.getElementById('res3').innerHTML = "in fahrenheit = "+ f ;
+		}
+		function reverse()
+		{
+			// body...
+			var str = document.getElementById('s2').value;
+			var rev = "";
+			for (var i = str.length; i >= 0; i--)
+			 {
+				rev = rev +str.charAt(i);
+				
+			}
+			document.getElementById('res4').innerHTML =  "your reverse string in reverse: " + rev;
+
+		}
+		function numvowel()
+		{
+			// body...
+			var a = document.getElementById('s3').value;
+				var j = 0;
+				for (var i =0 ; i < a.length; i++)
+				{
+					switch (a[i])
+					{
+						case 'a':
+						case 'e':
+						case 'i':
+						case 'o':
+						case 'u':
+						case 'A':
+						case 'E':
+						case 'I':
+						case 'O':
+						case 'U':
+							j++;
+							break;
+					}
+				}
+				document.getElementById('res5').innerHTML = j +" is the number of vowels in u r string";
+		}
+
+	</script>
+</body>
+</html>
