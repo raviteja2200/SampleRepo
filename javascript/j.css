@@ -1,0 +1,18 @@
+.lvl{
+	background-color: red;
+	height: 60px;
+	width: 60px;
+	color: white;
+	display: inline-block;
+	
+}
+.lvl1{
+	background-color: red;
+	height: 60px;
+	width: 60px;
+	color: white;
+	display: inline-block;
+}
+.container{
+	display: inline;
+}
