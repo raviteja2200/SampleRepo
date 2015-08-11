@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX and api</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+</head>
+<body>
+	<h1>Ajax and API tutorial</h1>
+	<ul id ='data'></ul>
+
+	<h2>Add you super hero name and age</h2>
+	<br />
+	Name:<input type="text" id="fname">
+	<br />
+	Age:<input type="text" id="fage">
+	<br />
+	<button id="bt">add</button>
+	
+	<script>
+		var $datas = $('#data');
+		var $fsname = $('#fname');
+		var $fage = $('#fage');
+		function addFriend(friend){
+			$datas.append('<li> name: '+ friend.name + ', age: ' + friend.age + '</li>');
+		}
+		$.ajax({
+  		type: 'GET',
+  		url: 'http://rest.learncode.academy/api/johnbob/friends',
+  		success: function(friends) {
+    	console.log("I have friends!", data); //returns all of johnbob's friends
+    	$.each(friends,function(i,friend){
+						addFriend(friend);
+
+					});
+  	},
+  		error: function()
+  	{
+  		alert('error loading friends name');
+  	}
+	});
+		$('#bt').on('click',function()
+			{
+				var friend = {
+					name: $fsname.val(),
+					age: $fage.val(),
+					};
+			$.ajax({
+				type:'POST',
+				url:'http://rest.learncode.academy/api/johnbob/friends',
+				data: friend,
+				success: function(newfriend){
+					addFriend(newfriend);
+				},
+				error: function()
+  						{
+  							alert('error posting friend');
+  						}
+
+			})
+		});
+
+</script>	
+</body>
+</html>
+<!-- 
+$.each(data,function(i,data){
+					$data.append('<li> name: '+ data.name + ', age: ' + data.age '</li>'); -->
+
+<!-- var $datas = $('#data');
+	$(funtion(){
+		$.ajax({
+			type.'GET',
+			url: 'http://rest.learncode.academy/api/johnbob/friends',
+			success: function(data)
+			{
+				$.each(data,function(i,data){
+					$data.append('<li> name: '+ data.name + ', age: ' + data.age '</li>');
+
+				});
+			}
+		});
+	}); -->

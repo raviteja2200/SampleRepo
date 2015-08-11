@@ -1,0 +1,13 @@
+h1{
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+div{
+	text-align: center;
+	font-family: "Comic Sans MS";
+	display: inline-block;
+	margin-right: 250px;
+}
+#bt{
+	margin-right: -1250px;
+}

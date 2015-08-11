@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>bootstrap</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="row">
+  <div class="col-md-4" id="lvl1">
+    <button class="btn btn-default" type="button" id="switch">click to toggle form</button>
+  </div>
+  <div class="col-md-4">
+ 
+
+<form>
+   <div class="form-group">
+    <label for="exampleInputName">FirstName</label>
+    <input type="text" class="form-control" id="exampleInputName" placeholder="FirstName">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputLName">LastName</label>
+    <input type="text" class="form-control" id="exampleInputLName" placeholder="LastName">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+   
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputAddress">Address</label>
+    <input type="text" class="form-control" id="exampleInputAddress" placeholder="Street Address">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputAddress">City</label>
+    <input type="text" class="form-control" id="exampleInputCity" placeholder="City">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputAddress">State</label>
+    <input type="text" class="form-control" id="exampleInputState" placeholder="State">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputAddress">Zip Code</label>
+    <input type="text" class="form-control" id="exampleInputZIP" placeholder="ZIP">
+  </div>
+
+
+
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">PDF only pls</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">SubmitPri</button>
+  <button type="cancel" class = "btn btn-warning">Cancelwith Warning</button>
+</form>
+</div>
+ <div class="col-md-4">.col-md-4</div>
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+  $(function()
+    {
+      $('#switch').on('click',function()
+        {
+            $('form').slideToggle(500);
+        });
+    });
+</script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+<!-- 
+create a first name, last name, email, address using bootstrap
+submit to be primary. cancel is warning.
+lets see -->

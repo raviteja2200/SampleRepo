@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>use JS to print page</title>
+</head>
+<body>
+	<p>Hello Every body</p>
+	<button onclick="print_page()">click to print this page</button>
+	<br />
+	<button onclick = "print_date()">click to see todays date</button>
+	<br />
+	<div id="res"></div>
+	<br/>
+
+	<br/>
+	<script type="text/javascript">
+		
+
+		function print_date() 
+		{
+			// body...
+			var today = new Date();
+			var d = today.getDate();
+			var m = today.getMonth()+1;
+			var y = today.getFullYear();
+			if(d<10)
+			{
+				d= '0'+d;
+			}
+			if(m<10)
+			{
+				m = '0'+m;
+			}
+			today = m+'/'+d+'/'+y;
+			console.log(today);
+		}
+
+
+		function print_page()
+		{
+			window.print();
+
+		}
+	</script>
+</body>
+</html>
