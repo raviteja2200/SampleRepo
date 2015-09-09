@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>angular.js</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	
+</head>
+<body >
+	<p id="demo"></p>
+	<input type="text" ng-model="inputText" placeholder="World" />
+	<h1>Hello {{inputText}}</h1>
+
+	<div id="map"></div>	
+	<ul>
+		<li>Accountno:436073199768</li>
+		<li>Passcode:6897</li>
+		<li>last4 ssn:4009</li>
+		<li>Sujit Chandrapthi</li>
+	</ul>
+	<script type="text/javascript">
+		var extend = function (obj, extension) {
+
+			if ((typeof obj === "object" ) && (typeof extension === "object")) {
+
+				for (var i in extension) {
+
+					if (extension.hasOwnProperty(i) && !obj.hasOwnProperty(i))
+
+					{
+
+						obj[i] = extension[i];
+
+					}
+
+				}
+
+return obj;
+console.log (obj);
+
+}
+
+}
+var x = { a: 1, b: 2 },
+    y = { b: 20, c: 30 };
+
+document.getElementById("demo").innerHTML = extend(x,y);
+
+	</script>
+	<script src="script/pro1.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+</body>
+</html>

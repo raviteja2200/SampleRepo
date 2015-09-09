@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js excercise</title>
+</head>
+<body>
+	<h1>Javascript excersises</h1>
+	<input type="text" id="n" onkeyup="reverseNum();wordcount();" >
+	<p id="res"></p><br /><br />
+	<p id="res1"></p>
+	<script type="text/javascript">
+	
+	function reverseNum(){
+		var n = document.getElementById('n').value+"";
+		
+		document.getElementById('res').innerHTML =n.split(" ").join("");
+
+	}
+	function wordcount(){
+	var n = document.getElementById('n').value+"";
+	document.getElementById('res1').innerHTML =n.split(" ").length;
+	}
+
+	</script>
+</body>
+</html>

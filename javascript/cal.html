@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	h   
+</head>
+<body>
+	<form class="form-inline">
+		<div class="form-group">
+			<input type="number" class="form-control" id="num1" placeholder="num1">
+		</div>
+		<div class="form-group">
+			<input type="number" class="form-control" id="num2" placeholder="num2">
+		</div>
+		<div class="form-group">
+			<button type="button" class="btn btn-primary" id="sub">submit</button>
+		</div>
+		<p class="lead" id="res"></p>
+	</form>
+	<input type="text" onchange="displayText()">	
+	<br/>
+	<button type="button" class="btn btn-default" value="7">7</button>
+	<button type="button" class="btn btn-default" value="8">8</button>
+	<button type="button" class="btn btn-default" value="9">9</button>
+	<button type="button" class="btn btn-default" value="*">*</button>
+	<br />
+	<button type="button" class="btn btn-default" value="4">4</button>
+	<button type="button" class="btn btn-default" value="5">5</button>
+	<button type="button" class="btn btn-default" value="6">6</button>
+	<button type="button" class="btn btn-default" value="-">-</button>
+	<br />
+	<button type="button" class="btn btn-default" value="1">1</button>
+	<button type="button" class="btn btn-default" value="2">2</button>
+	<button type="button" class="btn btn-default" value="3">3</button>
+	<button type="button" class="btn btn-default" value="+" style="width=34px"> +</button>	
+	<br/>
+	<button type="button" class="btn btn-default" value="0">0</button>
+	<button type="button" class="btn btn-default" value="." style="width=34px"> .</button>
+	<button type="button" class="btn btn-default" value="=">=</button>
+	<button type="button" class="btn btn-default" value="/">/</button>
+	<br/>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+			var $num1 = $('#num1');
+			var $num2 = $('#num2');
+			
+		/*var $res = $('#res');*/
+		/*function addnum(num1,num2){
+			/*num11=parseFloat($num1.val());
+			num22=parseFloat($num2.val());*/
+			/*num11=parseFloat($num1.val());
+			num22=parseFloat($num2.val());
+			$('#res').html("your sum of given numbers is: " +  (num11+num22) + "<br />");*/
+		
+		$('#sub').on('click',function(){
+			num11=parseFloat($num1.val());
+			num22=parseFloat($num2.val());
+			$('#res').html("your difference of given numbers is: " +  (num11-num22) + "<br />"+
+				"your sum of given numbers is: "+(num11+num22) + "<br />"+"The product of given numbers is: " +(num11*num22)+"<br />"+ "The divsion of given numbers is: " +(num11/num22) +"<br />");
+		});
+	</script>
+	
+</body>
+</html>

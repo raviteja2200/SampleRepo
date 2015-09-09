@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ddown.css">
+</head>
+<body>
+<h1>javascript excersies</h1>
+<div class="tab">
+	<ul class="tabs">
+		<li rel = 'panel1' class="active">panel1</li>
+		<li rel = 'panel2'>panel2</li>
+		<li rel = 'panel3'>panel3</li>
+		<li rel = 'panel4'>panel4</li>
+	</ul>
+
+	<div id="panel1" class="panel active">
+		content1<br/>
+		content1<br/>
+		content1<br/>
+		content1<br/>
+	</div>
+
+	<div id="panel2" class="panel">
+		content2<br/>
+		content2<br/>
+		content2<br/>
+		content2<br/>
+	</div>
+
+	<div id="panel3" class="panel">
+		content3<br/>
+		content3<br/>
+		content3<br/>
+		content3<br/>
+	</div>
+
+	<div id="panel4" class="panel">
+		content4<br/>
+		content4<br/>
+		content4<br/>
+		content4<br/>
+	</div>
+
+</div>
+<img src="http://blogs-images.forbes.com/steveolenski/files/2014/12/stock-market-down.png" />
+<script src="jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//look for clikc on li's
+		$('.tab .tabs li').on('click',function(){
+			//get the element which is clicked
+
+			var panelVisible = $(this).attr('rel');
+			
+			//hide current panel
+			$('.tab .panel.active').slideUp(300, function(){
+					$(this).removeClass('active');
+					$('#'+panelVisible).slideDown(300,function(){
+						$(this).addClass('active');
+					});
+
+			});
+		});
+	});
+</script>
+
+</body>
+</html>

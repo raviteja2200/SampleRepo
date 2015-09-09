@@ -4,12 +4,14 @@
 	<title>find your product and division</title>
 </head>
 <body>
-	num1: <input type="text" id="num1" onkeyup="mul();div();">
+	num1: <input type="text" id="num1" onkeyup="mul();div();add();sub()">
 	<br />
 	<br />
-	num2:<input type = "text" id = "num2" onkeyup="mul();div();">
+	num2:<input type = "text" id = "num2" onkeyup="mul();div();add();sub()">
 	<div id="res"></div>
 	<div id="res1"></div>
+	<div id="res2"></div>
+	<div id="res3"></div>
 	<script type="text/javascript">
 		function mul () {
 				// body...
@@ -33,6 +35,27 @@
 				*/
 				document.getElementById('res').innerHTML = "your division result is " + (x/y) + "<br /><br />";
 			}
+		function add() {
+			var x = parseFloat(document.getElementById('num1').value || 0); //getting num 1
+				var y = parseFloat(document.getElementById('num2').value || 0); //getting num 2
+				var res = x+y;
+				/*console.log(x);
+				console.log(y);
+				for debugging
+				*/	
+				document.getElementById('res2').innerHTML = "your sum is " + res + "<br /><br />";
+
+		}
+		function sub() {
+			var x = document.getElementById('num1').value || 0; //getting num 1
+				var y = document.getElementById('num2').value || 0; //getting num 2
+				/*console.log(x);
+				console.log(y);
+				for debugging
+				*/	
+				document.getElementById('res3').innerHTML = "your diiference is " + (x-y) + "<br /><br />";
+
+		}	
 					
 	</script>
 </body>

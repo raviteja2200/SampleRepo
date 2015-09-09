@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Details</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+</head>
+<body>
+	<strong>The best way to get in touch is by dropping me an email : gayathri.kura@gmail.com </strong><br/><br/>
+	<p>You're also welcome to contact me through Twitter, my Facebook page, or by using the form below.</p><br/><br/>
+	
+	<div id="form">
+	<form role="form"  action="">
+	<fieldset>
+	<legend>Send your details</legend>
+		
+ 		<div class="form-group">
+      	<label for="email">Email:</label>
+      	<input type="email" class="form-control" id="email" placeholder="Enter email">
+    	</div>
+
+      <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your Name">
+      </div>
+
+    	<div class="form-group">
+    		<label for="subject">Subject:</label>
+    		<input type="text" class="form-control" id="subject" placeholder="Enter Subject type">
+    	</div>
+
+    	<div class="form-group">
+    		<label for="message">Message:</label>
+    		<textarea class="form-control" rows="6" id="message" placeholder="Enter your message"></textarea>
+    	</div>
+
+    	
+    	<input type="submit" class="btn btn-primary" id="send" value="Send" onclick="validateForm()">
+    </fieldset>	
+    	
+</form>
+</div>
+
+
+<script type="text/javascript" src="contact_validation.js"></script>
+<script src="jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</body>
+</html>

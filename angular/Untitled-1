@@ -1,0 +1,20 @@
+angular javascript is a single page application 
+html css javascript
+all the html is converted into objects in JS
+objects have properties and the js will call the object with help of selectors
+js uses indentifiers events logic binding the events
+angularjs is a framework
+framework gives us automated functionalaties
+firlst smimple example of angular js
+major featuers
+Angular js is framework automatic data binding we call it as two way data binding
+Model--> View Controller framework(Responsible for business logic callling the api and holding the data also)
+View--> for data presentation 
+Controller-->eastablishes communication between view and <-->(twoway) model
+controller dont hold bussiness logic it only communicates with model and view
+in ythis model we are clearly stating responsibiltes of each and every part of the system which in turn imroves maintainance which leads to parallel development,less dependencies view is not dependent on model or controllers and vice versa
+ember is also mvc but backbone isn't
+we will find the relation between ng app and other guys
+ng-app is the starting point for angularapp it is directive
+{{expression}}
+it binds the 
