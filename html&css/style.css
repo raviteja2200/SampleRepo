@@ -1,0 +1,39 @@
+body{
+	background:red;
+	margin: 0px;	
+}
+header h1{
+	display : inline;
+	padding: 0px;
+}
+header nav{
+	display: inline;
+	padding: 0px;
+}
+header nav ul{
+	display: inline;
+	padding: 0px;
+}
+nav ul li{
+	display:inline-block;
+	padding:10px 5px;
+	background-color: yellow;
+	border-radius: 5px;
+	margin-bottom:5px;
+
+}
+.row{
+	margin: 0px;
+}
+.col{
+	float: left;
+	display:inline-block;
+	width : 32%;
+	background-color:blue;
+	padding: 10px 0px;
+	border-radius: 5px;
+	margin:8px;
+}
+footer{
+	clear:both;
+}

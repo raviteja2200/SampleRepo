@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html_css</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>
+	Mypage
+</h1>
+	<nav>
+		<ul>
+			<button class="btn1">btn1</button>
+			<button class="btn2">btn2</button>
+			<button class="btn3">btn3</button>
+		</ul>
+	</nav>
+</header>
+
+<div class="row">
+	<div class="col" id="col1">col1</div>
+	<div class="col" id="col2">col2</div>
+	<div class="col" id="col3">col3</div> 
+</div>
+<footer>
+	&copy; 2015 Ravi Teja Mamidipaka
+</footer>
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+	$(function(){
+		$('.btn1').on('click',function(){
+			$('#col1').toggle(200);
+		})
+
+		$('.btn2').on('click',function(){
+			$('#col2').toggle(200);
+		})
+
+		$('.btn3').on('click',function(){
+			$('#col3').toggle(200);
+		})
+})
+
+</script>
+</body>
+</html>
